@@ -1,0 +1,197 @@
+/* General Button Styles (apply to both) */
+.student-violation-button,
+.violation-report-button {
+    padding: 12px 24px;        
+    border: none;
+    border-radius: 8px;        
+    cursor: pointer;
+    font-size: 14px;           
+    font-weight: 600;          
+    text-transform: uppercase;  
+    transition: all 0.3s ease;  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: -35px;
+    left: 15px;
+}
+
+/* Specific Button Styles */
+
+.student-violation-button {
+    background-color: #FCD116; 
+    color: #1B4284;
+}
+
+.student-violation-button:hover {
+    background-color: #FCD116; 
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); 
+}
+
+.violation-report-button {
+    background-color: #FCD116; 
+    color: #1B4284;
+}
+
+.violation-report-button:hover {
+    background-color: #FCD116; 
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); 
+}
+
+.back-button-studvio {
+    padding: 12px 24px;        
+    border: none;
+    border-radius: 8px;        
+    cursor: pointer;
+    font-size: 12px;           
+    font-weight: 600;          
+    text-transform: uppercase;  
+    transition: all 0.3s ease;  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    position: relative;
+    top: -92.5px;
+    left: 1050px;
+}
+  
+
+.back-button-studvio {
+    background-color: #FCD116; 
+    color: #1B4284;
+}
+  
+  .back-button-studvio:hover {
+    background-color: #FCD116; 
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  }
+
+  .back-button-viocon {
+    padding: 12px 24px;        
+    border: none;
+    border-radius: 8px;        
+    cursor: pointer;
+    font-size: 12px;           
+    font-weight: 600;          
+    text-transform: uppercase;  
+    transition: all 0.3s ease;  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    position: relative;
+    top: -122.5px;
+    left: 1050px;
+}
+  
+
+.back-button-viocon {
+    background-color: #FCD116; 
+    color: #1B4284;
+}
+  
+  .back-button-viocon:hover {
+    background-color: #FCD116; 
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); 
+  }
+  
+
+  .all-announcement-button {
+    padding: 12px 24px;        
+    border: none;
+    border-radius: 8px;        
+    cursor: pointer;
+    font-size: 14px;           
+    font-weight: 600;          
+    text-transform: uppercase;  
+    transition: all 0.3s ease;  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    position: relative;
+    top: -80px;
+    left: 15px;
+}
+
+/* Specific Button Styles */
+.all-announcement-button {
+    background-color: #FCD116; 
+    color: #1B4284;
+}
+
+.all-announcement-button:hover {
+    background-color: #FCD116; 
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); 
+}
+
+.blocked-studentacc-button {
+    padding: 12px 24px;        
+    border: none;
+    border-radius: 8px;        
+    cursor: pointer;
+    font-size: 14px;           
+    font-weight: 600;          
+    text-transform: uppercase;  
+    transition: all 0.3s ease;  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    position: relative;
+    top: -35px;
+    left: 130px;
+}
+
+/* Specific Button Styles */
+.blocked-studentacc-button {
+    background-color: #be201c; 
+    color: white;
+}
+
+.blocked-studentacc-button:hover {
+    background-color: #5e0907; 
+    color: white;
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); 
+}
+
+
+.active-studentacc-button {
+    padding: 12px 24px;        
+    border: none;
+    border-radius: 8px;        
+    cursor: pointer;
+    font-size: 14px;           
+    font-weight: 600;         
+    text-transform: uppercase;  
+    transition: all 0.3s ease;  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    position: relative;
+    top: -35px;
+    left: -100px;
+}
+
+/* Specific Button Styles */
+.active-studentacc-button {
+    background-color: #00ff00; 
+    color: white;
+}
+
+.active-studentacc-button:hover {
+    background-color: #037703; 
+    color: white;
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); 
+}
+
+
+
+.body-header{
+    font-size: 20px;
+    top: 20px;
+    left: 18px;
+    position: relative;
+}
+
+.button-header{
+    font-size: 20px;
+    top: 20px;
+    left: 18px;
+    position: relative;
+}
+
+

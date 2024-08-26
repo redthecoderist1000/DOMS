@@ -1,0 +1,146 @@
+:root{
+    --div-primary-color: #1B4284;
+    --div-hover-color: #D40000;
+    --div-button-color:#FCD116;
+    --text-color: rgb(84, 95, 110);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  *{
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+  }
+
+header{
+    padding: 20px 40px;
+    color: var(--div-primary-color);
+    text-align: center;
+  }
+
+  header a{
+    position: absolute;
+    left: 2rem;
+    color: var(--div-primary-color);
+  }
+
+  header i{
+    font-size: 2rem;
+  }
+
+img{
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    opacity: .2;
+    z-index: 0;
+    transform: translateX(-50%);
+}
+
+.container h2{
+    color: var(--div-primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.container {
+    margin: auto;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+
+    .upper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+    .mid{
+        width: 100%;
+        height: 70%;
+
+        h2{
+            color: gray;
+            width: 32%;
+            padding-left: 50px;
+            display: flex;
+            
+            span{
+                color: black;
+                z-index: 1;
+                height: 20px;
+                padding-bottom: 5px;
+                margin-left: 20px;
+                
+                
+            }
+        }
+    }
+
+    label{
+        white-space: nowrap;
+        font-weight: bold;
+    }
+
+    input{
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid black;
+        font-weight: bold;
+        padding-left: 10px;
+        font-size: 1rem;
+    }
+
+    textarea{
+        font-family: sans-serif;
+        display: block;
+        font-size: 1rem;
+        padding: 8px 20px;
+        width: 100%;
+        height: 100px;
+        resize: none;
+        /* border: 2px solid black; */
+        border: none;
+        background-color: gainsboro;
+        margin-top: .5rem;
+        z-index: 1;
+    }
+
+    .input-wrap{
+        display: flex;
+        gap: 2px;
+        margin-bottom: 1rem;
+    }
+
+    .lower{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        padding-top: 5rem;
+        margin-top: auto;
+        gap: 1rem;
+
+        h4{
+            text-align: center;
+            margin-top: .5rem;
+            margin-bottom: 0;
+            font-size: .7rem;
+        }
+
+        hr{
+            width: 160px;
+            border: 1px solid black;
+        }
+    }
+}
+

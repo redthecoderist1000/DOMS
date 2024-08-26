@@ -1,0 +1,92 @@
+:root {
+  --div-primary-color: #1b4284;
+  --div-hover-color: #d40000;
+  --div-button-color: #fcd116;
+}
+
+body {
+  background-color: #1b4284;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  outline: none;
+}
+
+img {
+  width: 70%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  gap: 6rem;
+  padding: 20px 40px 40px 40px;
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  width: 100%;
+}
+
+label {
+  display: block;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: solid 1px var(--div-button-color);
+}
+
+.error {
+  position: absolute;
+  transform: translateY(150px);
+}
+
+.error p,
+.error i {
+  color: rgb(255, 59, 59);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.buttons {
+  text-align: center;
+}
+
+button {
+  background-color: var(--div-button-color);
+  color: var(--div-primary-color);
+  padding: 20px;
+  width: 100%;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+a {
+  color: white;
+}

@@ -1,0 +1,134 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+img{
+    position: absolute;
+    width: 80%;
+    opacity: .2;
+    z-index: 0;
+    margin: auto;
+}
+
+.date{
+    display: flex;
+    justify-content: end;
+}
+
+.date input{
+    width: 120px;
+    border: none;
+    border-bottom: 2px solid black;
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+
+.allow{
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    border: 1px solid black;
+    padding: 20px 60px 60px 60px;
+
+    .mid{
+        width: 100%;
+        height: 70%;
+
+        input{
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid black;
+            font-weight: bold;
+            padding-left: 10px;
+            font-size: 1rem;
+        }
+
+        h2{
+            color: gray;
+            width: 32%;
+            padding-left: 50px;
+            display: flex;
+            
+            span{
+                color: black;
+                z-index: 1;
+                height: 20px;
+                padding-bottom: 5px;
+                margin-left: 20px;
+                
+                
+            }
+        }
+    }
+
+    label{
+        white-space: nowrap;
+        font-weight: bold;
+    }
+
+    textarea{
+        font-family: sans-serif;
+        display: block;
+        font-size: 1rem;
+        padding: 8px 20px;
+        width: 100%;
+        height: 100px;
+        resize: none;
+        /* border: 2px solid black; */
+        border: none;
+        background-color: gainsboro;
+        margin-top: .5rem;
+        z-index: 1;
+    }
+
+    .input-wrap{
+        display: flex;
+        gap: 2px;
+        margin-bottom: 1rem;
+    }
+
+    .lower{
+        padding-top: 2rem;
+        width: 100%;
+
+        .lower-list{
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            margin-top: auto;
+            flex-wrap: wrap;
+            gap: 3rem 1rem;
+            padding-top: 3rem;
+
+        h4{
+            margin-top: .5rem;
+            margin-bottom: 0;
+            font-size: .9rem;
+        }
+
+        hr{
+            width: 190px;
+            border: 1px solid black;
+        }
+    }
+    }
+}
+

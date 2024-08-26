@@ -1,0 +1,482 @@
+*{
+    outline: none;
+}
+
+/* .header-btn i{
+    padding: 0 20px;
+    font-size: 1.5rem;
+    z-index: 1;
+    left: 0;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    background-color: gray;
+}
+
+.header p{
+    text-align: center;
+    margin-left: 300px;
+} */
+
+.header-btn i{
+    position: absolute;
+    padding: 20px;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+.header{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 40px;
+}
+
+.title-page{
+    margin: 0 1rem;
+    margin-bottom: 4rem;
+}
+
+.title-page h1{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.title-page hr{
+    border: none;
+    height: 3px;
+    background-color: var(--div-primary-color);
+}
+
+.filter-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* background-color: #f3f8fa; */
+    border-top: solid 1.5px #e4e4e4;
+    border-bottom: solid 1.5px #e4e4e4;
+}
+
+.search i{
+    position: absolute;
+    font-size: 1.2rem;
+    color: #ade3f5;
+    transform: translateY(7px);
+    padding-left: 10px;
+}
+
+.search input{
+    padding: 8px 5px 8px 40px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    width: 200px;
+    border: none;
+    background-color: white;
+}
+
+.dropdowns select, .dropdowns span {
+    padding: 8px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    color: rgb(110, 110, 110);
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.dropdowns i{
+    font-size: 1rem;
+}
+
+.table-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 1rem;
+}
+
+.table-nav a{
+    text-decoration: none;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(52, 71, 94);
+    border-bottom: solid 3px transparent;
+    transition: .4s;
+}
+
+.table-nav ul{
+    display: flex;
+    gap: 2rem;
+}
+
+.table-nav li{
+    list-style: none;
+}
+
+.table-nav a:hover, .table-nav a:active{
+    border-bottom: solid 3px rgb(98, 130, 172);
+}
+
+.nav-list span{
+    font-size: .9rem;
+    background-color: #daf6ff;
+    color: rgb(128, 152, 184);
+    padding: 3px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.add-btn span{
+    background-color: var(--div-primary-color);
+    color: white;
+    font-size: 1.2rem;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.body-table{
+    max-height: 490px;
+    overflow: auto;
+    margin: 0 2rem;
+    color: rgb(84, 95, 110);
+}
+
+.body-table table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .body-table tbody{
+    height: 100%;
+  }
+
+  .body-table th{
+    border-bottom: solid 1.5px #e4e4e4;
+    text-transform:uppercase;
+  }
+  
+  .body-table th, .body-table td {
+    text-align: left;
+    padding: 15px;
+    max-width: 150px;
+    overflow: auto;
+  }
+
+   /* Modal ADD */
+.modal-add {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    padding: 20px; 
+    overflow: auto;
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content-add {
+    background-color: #fff;
+    position: relative;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header{
+    width: 100%;
+    background-color: var(--div-primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+}
+
+.modal-content-add form{
+    padding: 20px 40px 20px 40px;
+}
+
+.modal-content-add label{
+    font-size: 1.1rem;
+    min-width: 100px;
+    display: block;
+}
+
+.modal-body input, .modal-body select{
+    height: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 5px;
+    border: solid 1px black;
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+.modal-body textarea{
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 5px;
+    border: solid 1px black;
+    border-radius: 5px;
+    resize: none;
+    height: 100px;
+    width: 100%;
+}
+
+.add-button{
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.add-button button{
+    color: white;
+    background-color: #5cb85c;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.add-button button:hover{
+    background-color: #4c994c;
+}
+
+.close-add {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.close-add:hover,
+.close-add:focus {
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+  /* MODAL DEL */
+
+  .modaldel {
+    display: none;
+    position: fixed;
+    padding: 20px;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content-del {
+    background-color: #fefefe;
+    box-shadow: 5px 7px 7px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    width: 100%;
+    padding: 30px 40px;
+  }
+
+  .modal-content-del h1{
+    font-size: 2rem;
+  }
+
+   .modal-content-del p{
+    font-size: 1.2rem;
+   }
+
+  .modal-body{
+    margin: 1rem 0 2rem 0;
+  }
+
+  .modal-btn{
+    display: flex;
+    justify-content: end;
+    gap: .5rem;
+  }
+
+  .modal-btn button{
+    padding: 10px;
+    background-color: transparent;
+    border: solid 1px gray;
+    color: var(--text-color2);
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 92px;
+    transition: 0.4s;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.158);
+    font-size: 1rem;
+  }
+
+  .modal-btn button:hover{
+    background-color: gainsboro;
+  }
+
+  .modal-btn a {
+    padding: 10px;
+    background-color: #D40000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 92px;
+    transition: 0.4s;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.158);
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  .modal-btn a:hover {
+    background-color: #af0000;
+  }
+
+  /* Modal EDIT */
+  .modaledit {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    padding: 20px; 
+    overflow: auto;
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content-edit {
+    background-color: #fff;
+    position: relative;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-header{
+    width: 100%;
+    background-color: var(--div-primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.modal-content-edit form{
+    padding: 20px 40px 20px 40px;
+}
+
+.modal-content-edit label{
+    font-size: 1.1rem;
+    min-width: 100px;
+    display: block;
+}
+
+.modal-content-edit input, .modal-content-edit select{
+    height: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 5px;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+.modal-content-edit input{
+    width: 100%;
+}
+
+.modal-content-edit textarea{
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 5px;
+    border: solid 1px black;
+    border-radius: 5px;
+    resize: none;
+    height: 100px;
+    width: 100%;
+}
+
+.edit-button{
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.edit-button button{
+    color: white;
+    background-color: #5cb85c;
+    border: solid 1px #5cb85c;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.edit-button button:hover{
+    background-color: #4c994c;
+    border: solid 1px #4c994c;
+}
+
+#editCancelBtn{
+    background-color: transparent;
+    border: solid 1px gray;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#editCancelBtn:hover{
+    background-color: gainsboro;
+  }
+
+@media (max-width: 1411px) {
+    
+}
+
+@media (max-width: 1000px) {
+    .modal-body-add{
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,116 @@
+:root{
+    --div-primary-color: #1B4284;
+    --div-hover-color: #D40000;
+    --div-button-color:#FCD116;
+}
+
+body {
+    background-color: #1B4284;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo img{
+    width: 700px;
+    margin: -7rem 0;
+}
+
+.logo h1{
+    color: white;
+}
+
+.logo hr{
+    background-color: var(--div-button-color);
+    height: 5px;
+    border: none;
+    margin: 5px auto;
+    width: 500px;
+}
+
+.logo p{
+    color: white;
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+form{
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    padding: 50px 35px;
+    position: relative;
+}
+form *{
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    color: #FCD116;
+}
+
+label{
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input, select {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+option{
+    color: #080710;
+}
+
+button{
+    margin-top: 2rem;
+    width: 100%;
+    background-color: var(--div-button-color);
+    color: var(--div-primary-color);
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1115px) {
+    .logo{
+        display: none;
+    }
+}

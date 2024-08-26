@@ -1,0 +1,123 @@
+/* SIDENAV */
+
+.sidenav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 292px;
+    background-color: var(--div-primary-color);
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 10px;
+    border-right: 7px solid var(--div-button-color);
+  }
+
+  .top-sidenav{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+    .top-sidenav img{
+        width: 70%;
+        margin-bottom: -2rem;
+    }
+
+    .nu{
+      text-align: center;
+      color: white;
+    }
+
+    .nu hr{
+      background-color: var(--div-button-color);
+      height: 3px;
+      border: none;
+      margin: 5px 50px;
+    }
+
+    .nu p{
+      font-style: italic;
+    }
+
+    .sidenav-btn{
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px 20px;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .sidenav a{
+        position: relative;
+        padding: 8px 8px 8px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        display: block;
+        font-weight: bold;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        transition: .4s;
+    }
+    .menu .active{
+        background-color: var(--div-button-color);
+        color: var(--div-primary-color);
+    }
+    .sidenav a:hover{
+        background-color: var(--div-button-color);
+        color: var(--div-primary-color);
+        transform: translateY(-5px);
+    }
+    .logout {
+        display: flex;
+        flex-direction: column;
+        margin-top: auto; 
+    }
+
+/* END OF SIDENAV */
+
+
+@media screen and (max-width: 1411px) {
+    .header-btn{
+      display: block;
+    }
+
+      .sidenav {
+          width: 260px;
+          height: 100%;
+          position: fixed;
+          top: 0;
+          left: -100%;
+          transition: all 0.8s ease;
+      }
+
+      .sidenav-btn{
+        display: block;
+      }
+  
+      .sidenav.active {
+          left: 0;
+      }
+
+      .profile-side{
+        display: flex;
+      }
+  
+      .main-airsol{
+        left: 0;
+        width: 100%;
+    
+    }
+  }
